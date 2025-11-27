@@ -31,7 +31,7 @@ south_parishes <- c("Kingston", "St. Andrew", "St. Catherine", "Clarendon", "Man
 # Add Region column
 cr_long <- cr_long %>%
   mutate(
-    Regions = case_when(
+    Region = case_when(
       City %in% north_parishes ~ "North",
       City %in% south_parishes ~ "South",
       City == "Not known" ~ "Unknown",
@@ -46,5 +46,5 @@ View(cr_long)
 # 
 print(colnames(cr_long))
 
-colnames(cr_long)[4] <- "Regions_in_Jamaica"
+colnames(cr_long)[4] <- "Region_in_Jamaica"
 colnames(cr_long)[3] <- "Number_of_Crashes"
