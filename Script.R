@@ -48,3 +48,16 @@ print(colnames(cr_long))
 
 colnames(cr_long)[4] <- "Region_in_Jamaica"
 colnames(cr_long)[3] <- "Number_of_Crashes"
+
+
+#Analysis of Dataset
+colnames(cr_long)
+summary(cr_long$Number_of_Crashes) 
+print(which.min(cr_long$Number_of_Crashes))
+print(which.max(cr_long$Number_of_Crashes))
+print (cr_long$Number_of_Crashes[64])
+print (cr_long$Number_of_Crashes[1])
+print (cr_long$Region_in_Jamaica[64])
+print (cr_long$Region_in_Jamaica[1])
+print (cr_long$City[64])
+print (cr_long$City[1])
