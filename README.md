@@ -37,6 +37,45 @@ Together, these studies show the importance of investigating whether meaningful 
 
 This research question matters because road traffic crashes place a heavy public health and economic burden on Jamaica, with more than 300–400 deaths recorded each year. While earlier studies show that certain areas particularly those in the south have experienced higher crash rates. There has been little statistical comparison of broader northern versus southern regional patterns. Understanding whether mean crash levels differ between these regions can help reveal factors such as road conditions, traffic volume, enforcement practices, or socioeconomic differences that may influence the risk. Identifying such difference would support targeted and region-specific safety rules rather than one that fits for all national policy. 
 
+---
+
+# 3.	Visualisation
+
+## 3.1	Appropriate graphs for the RQ
+The bar plot clearly compares distribution of crashes based on region i.e. North and South making it more observable. This visualization depicts regional crash patterns identifying meaningful disparities existing between two areas.
+
+![alt text](images/Visualisation.png)
+
+Fig. 1. Distribution of Number of Crashes by Regions in Jamaica
+
+![alt text](images/Boxplot_Crashes_by_Region.png)
+
+Fig. 2. Boxplot for Comparison of mean
+
+| Year | External | North | South | Unknown |
+|------|----------|--------|--------|----------|
+| 2007 | 79       | 3477   | 11320 | 1868     |
+| 2008 | 53       | 3101   | 10393 | 3615     |
+| 2009 | 58       | 3224   | 9283  | 2695     |
+| 2010 | 22       | 1503   | 2850  | 1090     |
+| 2011 | 54       | 1697   | 4724  | 1249     |
+| 2012 | 97       | 2830   | 8105  | 2147     |
+| 2013 | 101      | 2850   | 8477  | 2379     |
+| 2014 | 99       | 2685   | 7263  | 2880     |
+| 2015 | 86       | 1795   | 4475  | 1126     |
+| **TOTAL** | **649** | **23162** | **66890** | **19049** |
+
+Table. 1. Contingency Table : [text](<Exported CSV Files/Contingency Table.csv>)
+
+## 3.2	Additional information relating to understanding the data (optional)
+
+South region contains Kingston which is country’s largest urban centre having heavier traffic volumes and therefore has the highest crashes in dataset while North regions has mostly rural areas having less traffic volumes and hence contributing less crashes in Jamica.
+
+## 3.3	Useful information for the data understanding 
+
+The plot represents how crashes are distributed among regions, also revealing the fact that South has highest count of crashes while north records substantially lower aiding understanding of regional imbalances in Jamica. Overall, the purpose of plot was to compare crash frequency among regions of Jamica.
+
+---
 
 # REFERENCES
 
