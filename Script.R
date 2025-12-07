@@ -45,14 +45,15 @@ cr_long <- cr_long %>%
 # View the result
 View(cr_long)
 
-# Export the long format data to a new CSV file
-write.csv(cr_long, file = "output.csv", row.names = FALSE)
-
+# Print Column Names of long format
 print(colnames(cr_long))
 
+# Renaming Columns
 colnames(cr_long)[4] <- "Region_in_Jamaica"
 colnames(cr_long)[3] <- "Number_of_Crashes"
 
+# Export the long format data to a new CSV file
+write.csv(cr_long, file = "output.csv", row.names = FALSE)
 
 # Analysis of Dataset
 colnames(cr_long)
