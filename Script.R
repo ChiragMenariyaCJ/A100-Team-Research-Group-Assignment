@@ -135,3 +135,47 @@ legend(
 
 # this closes the file after writing
 dev.off()
+
+# Creating Contingency Table
+contingency_table <- cr_long %>%
+  group_by(Year, Region_in_Jamaica) %>%
+  summarise(Total_Crashes = sum(Number_of_Crashes), .groups = "drop")
+
+# Show "contingency_table" Table
+print(contingency_table)
+
+# Long to Wide format for better understanding
+contingency_table_wide <- contingency_table %>%
+  pivot_wider(
+    names_from = Region_in_Jamaica,
+    values_from = Total_Crashes,
+    values_fill = 0
+  )
+
+# Converting Year column to character type so it can be added as TOTAL row
+contingency_table_wide$Year <- as.character(contingency_table_wide$Year)
+
+# Show "contingency_table_wide" Table
+print(contingency_table_wide)
+
+# Creating total row
+total_row <- contingency_table_wide %>%
+  summarise(
+    Year = "TOTAL",
+    South = sum(South, na.rm = TRUE),
+    North = sum(North, na.rm = TRUE),
+    Unknown = sum(Unknown, na.rm = TRUE),
+    External = sum(External, na.rm = TRUE)
+  )
+
+# Show "total_row" row
+print(total_row)
+
+# Adding total row in Contingency Table
+contingency_table_final <- bind_rows(contingency_table_wide, total_row)
+
+# Show "contingency_table_final" Table
+print(contingency_table_final)
+
+# Saving the table as .CSV file
+write.csv(contingency_table_final, "Contingency Table.csv", row.names = FALSE)
