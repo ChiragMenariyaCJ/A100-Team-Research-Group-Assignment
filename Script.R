@@ -52,8 +52,8 @@ print(colnames(cr_long))
 colnames(cr_long)[4] <- "Region_in_Jamaica"
 colnames(cr_long)[3] <- "Number_of_Crashes"
 
-# Export the long format data to a new CSV file
-write.csv(cr_long, file = "output.csv", row.names = FALSE)
+# Export the long format data to a new CSV file but Create a folder first named "Exported CSV Files"
+write.csv(cr_long, file = "Exported CSV Files/Long Formated.csv", row.names = FALSE)
 
 # Analysis of Dataset
 colnames(cr_long)
@@ -76,9 +76,9 @@ cr_test <- cr_long %>%
   )
 
 # File Name for Exporting Hist Plot
-png("histogram_non_normal_data.png")
+png("Images/Histogram for distribution.png")
 
-# Create Histogram
+# Creating Histogram for to check data is normal or abnormal distributed data
 hist(
   cr_long$Number_of_Crashes,
   main = "Histogram of Number of Crashes",
@@ -95,7 +95,7 @@ dev.off()
 wilcox.test(Number_of_Crashes ~ Region_in_Jamaica, data = cr_test)
 
 # File Name for Exporting Bar Plot
-png("Visualisation.png")
+png("Images/Visualisation.png")
 
 # Total Number of Crashes by Region in Jamaica
 region_sum <- aggregate(Number_of_Crashes ~ Region_in_Jamaica, data = cr_long, sum, na.rm = TRUE)
@@ -177,5 +177,5 @@ contingency_table_final <- bind_rows(contingency_table_wide, total_row)
 # Show "contingency_table_final" Table
 print(contingency_table_final)
 
-# Saving the table as .CSV file
-write.csv(contingency_table_final, "Contingency Table.csv", row.names = FALSE)
+# Saving the table as .CSV file but Create a folder first named "Exported CSV Files"
+write.csv(contingency_table_final, "Exported CSV Files/Contingency Table.csv", row.names = FALSE)
