@@ -45,7 +45,9 @@ cr_long <- cr_long %>%
 # View the result
 View(cr_long)
 
-# 
+# Export the long format data to a new CSV file
+write.csv(cr_long, file = "output.csv", row.names = FALSE)
+
 print(colnames(cr_long))
 
 colnames(cr_long)[4] <- "Region_in_Jamaica"
