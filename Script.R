@@ -182,3 +182,18 @@ write.csv(contingency_table_final, "Exported CSV Files/Contingency Table.csv", r
 
 # Final Wilcoxon test for the report documentation
 wilcox.test(Number_of_Crashes ~ Region_in_Jamaica, data = cr_test)
+
+# File name for exporting boxplot
+png("Images/Boxplot_Crashes_by_Region.png")
+
+# Creating Boxplot for Comparison of Mean
+boxplot(
+  Number_of_Crashes ~ Region_in_Jamaica,
+  data = cr_test,
+  xlab = "Region in Jamaica",
+  ylab = "Number of Crashes",
+  main = "Number of Crashes by Region in Jamaica (North vs South)"
+)
+
+# this closes the file after writing
+dev.off()
