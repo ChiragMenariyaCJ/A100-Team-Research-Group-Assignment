@@ -54,17 +54,17 @@ colnames(cr_long)[4] <- "Region_in_Jamaica"
 colnames(cr_long)[3] <- "Number_of_Crashes"
 
 
-#Analysis of Dataset
+# Analysis of Dataset
 colnames(cr_long)
-summary(cr_long$Number_of_Crashes) 
+summary(cr_long$Number_of_Crashes)
 print(which.min(cr_long$Number_of_Crashes))
 print(which.max(cr_long$Number_of_Crashes))
-print (cr_long$Number_of_Crashes[64])
-print (cr_long$Number_of_Crashes[1])
-print (cr_long$Region_in_Jamaica[64])
-print (cr_long$Region_in_Jamaica[1])
-print (cr_long$City[64])
-print (cr_long$City[1])
+print(cr_long$Number_of_Crashes[64])
+print(cr_long$Number_of_Crashes[1])
+print(cr_long$Region_in_Jamaica[64])
+print(cr_long$Region_in_Jamaica[1])
+print(cr_long$City[64])
+print(cr_long$City[1])
 
 
 # Taking only North and South regions
@@ -74,10 +74,10 @@ cr_test <- cr_long %>%
     Region_in_Jamaica = factor(Region_in_Jamaica, levels = c("South", "North"))
   )
 
-# File Name for Exporting Bar Plot
-png("Visualisation.png")
+# File Name for Exporting Hist Plot
+png("histogram_non_normal_data.png")
 
-# Create bar plot with y-axis
+# Create Histogram
 hist(
   cr_long$Number_of_Crashes,
   main = "Histogram of Number of Crashes",
@@ -90,5 +90,47 @@ hist(
 # this closes the file after writing
 dev.off()
 
-# Wilcoxon test (non-normal data)
+# Wilcoxon test (for not normally distributed data)
 wilcox.test(Number_of_Crashes ~ Region_in_Jamaica, data = cr_test)
+
+# File Name for Exporting Bar Plot
+png("Visualisation.png")
+
+# Total Number of Crashes by Region in Jamaica
+region_sum <- aggregate(Number_of_Crashes ~ Region_in_Jamaica, data = cr_long, sum, na.rm = TRUE)
+
+# Create colors equal to number of regions
+cols <- rainbow(nrow(region_sum))
+
+# Create bar plot with y-axis
+bp <- barplot(
+  region_sum$Number_of_Crashes,
+  names.arg = rep("", nrow(region_sum)),
+  col = rainbow(nrow(region_sum)),
+  main = "Distribution of Number of Crashes by Region in Jamaica",
+  xlab = "Region",
+  ylab = "Number of Crashes",
+  ylim = c(0, max(region_sum$Number_of_Crashes) * 1.15)
+)
+
+# Add values on bars
+text(
+  x = bp,
+  y = region_sum$Number_of_Crashes,
+  labels = format(region_sum$Number_of_Crashes, big.mark = ","),
+  pos = 3,
+  cex = 0.8
+)
+
+# Legend
+legend(
+  "topright",
+  legend = region_sum$Region_in_Jamaica,
+  fill = rainbow(nrow(region_sum)),
+  bty = "o",
+  bg = "white",
+  box.col = "black"
+)
+
+# this closes the file after writing
+dev.off()
