@@ -22,6 +22,25 @@ H₁: µNorth ≠ µSouth
 ```
 These hypotheses directly address the research question by testing whether regional crash patterns differ significantly.
 
+---
+
+# 2.	Background research
+
+## 2.1	Research papers
+
+Road traffic crashes remain a major public challenge in Jamaica and several studies highlights importance of geographic and demographic patterns. (Crawford and McGrowder, 2008) did research on national crash records and found a very strong point of incidents in southern parishes, particularly St. Andrew and St. Catherine. Their study highlighted demographic difference, with males having the majority of fatalities and identified that weekend periods having interval as high-risk. This early work shows that crash numbers are unevenly distributed across regions.
+
+In another study, (Bourne et al, 2022) examined crash fatalities before and during the COVID-19 pandemic and found an increase from 389 deaths in 2018 to 488 in 2022, where males accounting for the higher number of fatalities. These findings tells that road deaths remain consistently high in Jamaica and that both geographic and demographic patterns influence the risk.
+Together, these studies show the importance of investigating whether meaningful differences exist in crash levels between Jamaica’s northern and southern regions.
+
+## 2.2	Why RQ is of interest
+
+This research question matters because road traffic crashes place a heavy public health and economic burden on Jamaica, with more than 300–400 deaths recorded each year. While earlier studies show that certain areas particularly those in the south have experienced higher crash rates. There has been little statistical comparison of broader northern versus southern regional patterns. Understanding whether mean crash levels differ between these regions can help reveal factors such as road conditions, traffic volume, enforcement practices, or socioeconomic differences that may influence the risk. Identifying such difference would support targeted and region-specific safety rules rather than one that fits for all national policy. 
+
+
 # REFERENCES
 
 1. Pan American Health Organization (2024) National Road Safety Council Review Meeting Highlights Urgency for Comprehensive Action to Stem Road Fatalities in Jamaica. Available at: https://www.paho.org/en/news/11-1-2024-national-road-safety-council-review-meeting-highlights-urgency-comprehensive-action (Accessed: 7 December 2025).
+2. Bourne, P.A., Scarlett, M. and Beckford, K. (2022) Road accident fatalities in Jamaica before and during the Coronavirus disease 19 (COVID-19) pandemic. Available at: https://www.researchgate.net/publication/354857574 (Accessed: 7 December 2025).
+3. Bourne, P.A., Gayle, D. and Anderson, T. (2024) An investigation into the financial costs associated with motor vehicle accidents among public transport operators in Jamaica. Available at: https://www.researchgate.net/publication/381843459 (Accessed: 7 December 2025).
+4. Crawford, T. and McGrowder, D. (2008) ‘Road traffic injury epidemic in Jamaica: implications for governance and public policy’, Asian Social Science, 4(10), pp. 178–192. Available at: https://pdfs.semanticscholar.org/ac9d/ef73134c140c2417ee46e4694ae631b3caf7.pdf (Accessed: 7 December 2025).
