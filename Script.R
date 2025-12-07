@@ -91,7 +91,7 @@ hist(
 # this closes the file after writing
 dev.off()
 
-# Wilcoxon test (for not normally distributed data)
+# Wilcoxon test (for skewed distribution data)
 wilcox.test(Number_of_Crashes ~ Region_in_Jamaica, data = cr_test)
 
 # File Name for Exporting Bar Plot
@@ -179,3 +179,6 @@ print(contingency_table_final)
 
 # Saving the table as .CSV file but Create a folder first named "Exported CSV Files"
 write.csv(contingency_table_final, "Exported CSV Files/Contingency Table.csv", row.names = FALSE)
+
+# Final Wilcoxon test for the report documentation
+wilcox.test(Number_of_Crashes ~ Region_in_Jamaica, data = cr_test)
