@@ -151,10 +151,13 @@ The update ensured dataset consistency, clarity, and usability. Updating the col
 
 # 6. REFERENCES
 
-1. Pan American Health Organization (2024) National Road Safety Council Review Meeting Highlights Urgency for Comprehensive Action to Stem Road Fatalities in Jamaica. Available at: https://www.paho.org/en/news/11-1-2024-national-road-safety-council-review-meeting-highlights-urgency-comprehensive-action (Accessed: 7 December 2025).
-2. Bourne, P.A., Scarlett, M. and Beckford, K. (2022) Road accident fatalities in Jamaica before and during the Coronavirus disease 19 (COVID-19) pandemic. Available at: https://www.researchgate.net/publication/354857574 (Accessed: 7 December 2025).
-3. Bourne, P.A., Gayle, D. and Anderson, T. (2024) An investigation into the financial costs associated with motor vehicle accidents among public transport operators in Jamaica. Available at: https://www.researchgate.net/publication/381843459 (Accessed: 7 December 2025).
-4. Crawford, T. and McGrowder, D. (2008) ‘Road traffic injury epidemic in Jamaica: implications for governance and public policy’, Asian Social Science, 4(10), pp. 178–192. Available at: https://pdfs.semanticscholar.org/ac9d/ef73134c140c2417ee46e4694ae631b3caf7.pdf (Accessed: 7 December 2025).
+Bourne, P.A., Gayle, D. and Anderson, T. (2024) ‘An investigation into the financial costs associated with motor vehicle accidents among public transport operators in Jamaica’, International Journal of Public Finance, Law & Taxation, 4(1), pp. 1–18. Available at: http://management.eurekajournals.com/index.php/IJPFLT/article/view/896.
+
+Bourne, P.A., Scarlett, M. and Beckford, K. (2021) Road accident fatalities in Jamaica before and during the Coronavirus disease 19 (COVID-19) pandemic, 5(1). Available at: https://www.researchgate.net/publication/354857574.
+
+Crawford, T. and McGrowder, D. (2008) ‘Road traffic injury epidemic in Jamaica: implications for governance and public policy’, Asian Social Science, 4(10), pp. 178–192. Available at: https://pdfs.semanticscholar.org/ac9d/ef73134c140c2417ee46e4694ae631b3caf7.pdf
+
+Pan American Health Organisation (2024) National Road Safety Council Review Meeting Highlights Urgency for Comprehensive Action to Stem Road Fatalities in Jamaica. Available at: https://www.paho.org/en/news/11-1-2024-national-road-safety-council-review-meeting-highlights-urgency-comprehensive-action (Accessed: 7 December 2025).
 
 ---
 
