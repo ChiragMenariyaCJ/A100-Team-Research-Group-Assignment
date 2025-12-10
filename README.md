@@ -1,14 +1,31 @@
+# Cover Page:
+```
+7COM1079-0901-2025 - Team Research and Development Project
+
+Final report title: A Comparative Statistical Analysis of Road Traffic Crashes Between Northern and Southern Regions of Jamaica
+
+Group ID: A100
+
+Dataset number: DS 046
+
+Prepared by: Farah Fazli – 45075452
+             Yogisha Paneru – 23077080
+             Chirag Menariya – 24155368
+             Saurabh Yadav – 24057668
+             Omowonuola Olajide – 24132488
+```
+---
 # 1. Introduction
 
-## 1.1.	Problem statement and research motivation (100 words)
+## 1.1.	Problem statement and research motivation
 
 Road traffic crashes are a leading public health and development challenge in Jamaica, with hundreds of fatalities reported annually. This study asks whether towns and cities in Jamaica’s northern and southern regions differ in mean crash counts, aiming to reveal geographic disparities that current national summaries do not fully break down. Identifying regional differences can pinpoint high-risk areas and inform targeted infrastructure, enforcement, and education policies. Using island-wide crash records segmented by parish and town will allow robust statistical comparison and guide resource allocation to reduce injuries and fatalities across Jamaica’s varied transport routes. The analysis will support evidence-based policy decisions (Pan American Health Organization, 2024).
 
-## 1.2.	The data set (75 words)
+## 1.2.	The data set
 
 The dataset contains yearly records of road traffic crashes across towns and cities in Jamaica, including variables such as Year, City, Number_of_Crashes, and Region_in_Jamaica (North, South, Unknown, External). It provides a detailed view of crash distribution between 2007 and 2015, allowing comparison of crash frequencies across regions. This structure enables statistical analysis, such as comparing mean crashes between northern and southern areas, to identify area-based patterns, assess regional risk, and guide targeted road-safety measures.
 
-## 1.3.	Research question (50 words). 
+## 1.3.	Research question
 Is there a difference in the mean of the crashes between towns /cities of the northern part & southern part of Jamaica?
 
 ## 1.4.	Null hypothesis and alternative hypothesis (H₀/H₁) 
@@ -65,15 +82,40 @@ Fig. 2. Boxplot for Comparison of mean
 | 2015 | 86       | 1795   | 4475  | 1126     |
 | **TOTAL** | **649** | **23162** | **66890** | **19049** |
 
-Table. 1. Contingency Table : [text](<Exported CSV Files/Contingency Table.csv>)
+Table. 1. Contingency Table : [Contingency Table.csv](<Exported CSV Files/Contingency Table.csv>)
 
 ## 3.2	Additional information relating to understanding the data (optional)
 
-South region contains Kingston which is country’s largest urban centre having heavier traffic volumes and therefore has the highest crashes in dataset while North regions has mostly rural areas having less traffic volumes and hence contributing less crashes in Jamica.
+South region contains Kingston which is country’s largest urban centre having heavier traffic volumes and therefore has the highest crashes in dataset while North regions has mostly rural areas having less traffic volumes and hence contributing less crashes in Jamaica.
 
 ## 3.3	Useful information for the data understanding 
 
-The plot represents how crashes are distributed among regions, also revealing the fact that South has highest count of crashes while north records substantially lower aiding understanding of regional imbalances in Jamica. Overall, the purpose of plot was to compare crash frequency among regions of Jamica.
+The plot represents how crashes are distributed among regions, also revealing the fact that South has highest count of crashes while north records substantially lower aiding understanding of regional imbalances in Jamaica. Overall, the purpose of plot was to compare crash frequency among regions of Jamaica.
+
+---
+
+# 4.	Analysis
+
+## 4.1 Statistical test used to test the hypotheses and output
+
+Wilcoxon rank-sum test was used because the dataset was not normally distributed, making a non-parametric alternative more appropriate than the independent t-test. The distribution of crash counts was examined using a histogram generated in R (See Appendix C). The plot showed a clear right-skewed pattern, indicating that the data is not normally distributed. Because the assumption of normality required for a two-sample t-test was violated, a non-parametric alternative was necessary. Therefore, Wilcoxon rank-sum test was applied to compare crash counts between regions. 
+
+## 4.2 The null hypothesis is rejected /not rejected based on the p-value
+
+Wilcoxon rank-sum test produced the following results:
+
+```
+W = 3001, p-value = 7.148e-07
+```
+
+The p-value is far below the 0.05 significance threshold; the null hypothesis (H0: no difference in mean crashes between North and South) is rejected. This provides strong statistical evidence that crash counts differ significantly between the two regions. The difference is not due to the random variation. The grouped summary statistics generated in R further show that the South consistently exhibits higher mean crash values than the North. 
+
+| Region_in_Jamaica  | Mean_Crashes |
+|--------------------|--------------|
+|        South       |     1062     | 
+|        North       |      368     | 
+
+These results confirm that regional location plays a meaningful role in crash distribution across Jamaica.
 
 ---
 
@@ -117,6 +159,10 @@ The update ensured dataset consistency, clarity, and usability. Updating the col
 ---
 
 # 8.	Appendices 
+
+## A.	Script.R: 
+
+[Script.R](<Script.R>)
 
 ## B. GitHub log output: 
 
@@ -243,3 +289,9 @@ Date:   Wed Oct 29 18:57:51 2025 +0000
     Initial commit
 (END)
 ```
+
+## C. Visualisation:  
+
+![alt text](images/Histogram%20for%20distribution.png)
+
+Fig. 3. Histogram of Number of Crashes
