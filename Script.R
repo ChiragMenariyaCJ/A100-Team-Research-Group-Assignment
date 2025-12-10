@@ -94,6 +94,16 @@ dev.off()
 # Wilcoxon test (for skewed distribution data)
 wilcox.test(Number_of_Crashes ~ Region_in_Jamaica, data = cr_test)
 
+# Mean crashes for North and South separately
+mean_values <- cr_test %>%
+  group_by(Region_in_Jamaica) %>%
+  summarise(
+    Mean_Crashes = mean(Number_of_Crashes, na.rm = TRUE)
+  )
+
+# Print mean values
+print(mean_values)
+
 # File Name for Exporting Bar Plot
 png("Images/Visualisation.png")
 
