@@ -170,7 +170,31 @@ Pan American Health Organisation (2024) National Road Safety Council Review Meet
 ## B. GitHub log output: 
 
 ```
-commit 28e0848dace607151eac2f96c0722c1dde0e8dc8 (HEAD -> main, origin/main, origin/HEAD)
+commit 747931d073847945ea9184367e33bc7f8c2df090 (HEAD -> main, origin/main, origin/HEAD)
+Author: Saurabh Yadav <sy24abe@herts.ac.uk>
+Date:   Wed Dec 10 20:34:40 2025 +0000
+
+    Updating README file for references
+
+commit 58390648d650bb5c9b738e1c0b6f3fa8bd42b889
+Author: Saurabh Yadav <sy24abe@herts.ac.uk>
+Date:   Wed Dec 10 20:33:25 2025 +0000
+
+    Updating the Report for References, logs & Format
+
+commit c00a7449b21056d4c01fec5cbabcba4a78188629
+Author: Chirag Menariya <cm25ace@herts.ac.uk>
+Date:   Wed Dec 10 20:27:55 2025 +0000
+
+    Updating contributors csv file
+
+commit 124f7217dfa51e0f4c99386e257dabad2d2bb78c
+Author: Chirag Menariya <cm25ace@herts.ac.uk>
+Date:   Wed Dec 10 20:26:56 2025 +0000
+
+    Updating Logs in README & Adding the final Report file
+
+commit 28e0848dace607151eac2f96c0722c1dde0e8dc8
 Author: Chirag Menariya <cm25ace@herts.ac.uk>
 Date:   Wed Dec 10 20:23:06 2025 +0000
 
