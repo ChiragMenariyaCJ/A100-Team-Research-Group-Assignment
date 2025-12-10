@@ -167,7 +167,50 @@ The update ensured dataset consistency, clarity, and usability. Updating the col
 ## B. GitHub log output: 
 
 ```
-commit 2354d3e59373e46670b20b59ef9629efe2d7ea03 (HEAD -> main, origin/main, origin/HEAD)
+commit 28e0848dace607151eac2f96c0722c1dde0e8dc8 (HEAD -> main, origin/main, origin/HEAD)
+Author: Chirag Menariya <cm25ace@herts.ac.uk>
+Date:   Wed Dec 10 20:23:06 2025 +0000
+
+    Adding contributors.csv & Updating Readme File for Analysis
+
+commit 46c88b538653fdc346e59da4bffd4de91c997d27
+Merge: 0585793 da815a3
+Author: Yogisha Paneru <yp24aar@herts.ac.uk>
+Date:   Wed Dec 10 19:55:07 2025 +0000
+
+    Merge branch 'main' of https://github.com/ChiragMenariyaCJ/A100-Team-Research-Group-Assignment
+
+commit 05857935e105fee884987a4d2f29f52bd7955c86
+Author: Yogisha Paneru <yp24aar@herts.ac.uk>
+Date:   Wed Dec 10 19:55:02 2025 +0000
+
+    Add mean crashes analysis for North and South regions
+
+commit da815a3da128021e1071ed2843c151de9700a502
+Author: Farah Fazli <ff24aap@herts.ac.uk>
+Date:   Sun Dec 7 23:00:48 2025 +0000
+
+    Adding References & Evaluation Sections for Report
+
+commit aa03f462d929663df34241e708840b01e39d82bd
+Author: Saurabh Yadav <sy24abe@herts.ac.uk>
+Date:   Sun Dec 7 22:57:15 2025 +0000
+
+    Adding Visualisation Section for Report including Graph Images
+
+commit 9acb01b94a117386c284b7f4cc78fca012b825ff
+Author: Yogisha Paneru <yp24aar@herts.ac.uk>
+Date:   Sun Dec 7 22:49:20 2025 +0000
+
+    Adding Background Research section for report with references
+
+commit 433c9a55fb7b5ee508313aecededb3138cbcfd66
+Author: Farah Fazli <ff24aap@herts.ac.uk>
+Date:   Sun Dec 7 22:29:04 2025 +0000
+
+    Creating Boxplot for Comparison of Mean
+
+commit 2354d3e59373e46670b20b59ef9629efe2d7ea03
 Author: Omowonuola Olajide <oo25aas@herts.ac.uk>
 Date:   Sun Dec 7 21:11:04 2025 +0000
 
